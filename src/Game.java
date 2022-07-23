@@ -92,8 +92,11 @@ public class Game {
             if (fixedMovie.equals(randomStringMovie)) {
                     System.out.println("You have guessed a movie!");
                     break;
+            } else if (loops == 10) {
+                    System.out.println("Too bad, you did not guess a movie.");
+                    System.out.println("Name of this movie was " + randomStringMovie + ".");
             } else {
-                    continue;
+                continue;
             }
         }
     }
